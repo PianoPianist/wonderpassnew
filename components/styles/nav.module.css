@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:wght@500&display=swap');
+
+.parent {
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 3.5vw;
+    display: flex;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: row;
+}
+
+.logo {
+    color: #FFF;
+    font-size: 2vw;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    /* margin-top:; */
+    width: 100vw;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    padding-top: 0 !important;
+    padding: 1vw;
+}
+
+.link {
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin: 0 1.25vw;
+    transition: 0.5s ease-in-out;
+}
+
+.link:hover {
+    color: #FFA8DC;
+    transition-duration: 0.5s;
+}
+

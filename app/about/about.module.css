@@ -1,0 +1,34 @@
+
+
+.images {
+    width: 52.562vw;
+    height: 23.805vw;
+    position: absolute;
+    right: 5vh;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    justify-content: flex-end;
+}
+
+.image1 {
+    margin-right: 3.5vw;
+    margin-top: 3vw;
+    width: 537px;
+    height: 289px;
+    bottom: 0;
+}
+
+.homePara {
+    margin-top: 3vh;
+    display: flex;
+    width: 55.165vw;
+    height: 6.515vw;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 1.647vw;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Poppins', sans-serif;
+    line-height: 142%;
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:wght@500&display=swap');
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.homeHeading {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-size: 8vw;
+    letter-spacing: 0.5vw;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.gradient1 {
+    /* color: radial-gradient(#6F3FFF, #FFC3FE, #BB85FE) !important; */
+    background: -webkit-radial-gradient(farthest-side ,#6F3FFF, #FFC3FE, #BB85FE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.homePara {
+    margin-top: 3vh;
+    display: flex;
+    width: 39.165vw;
+    height: 6.515vw;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 1.647vw;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Poppins', sans-serif;
+    line-height: 142%;
+}
+
+.images {
+    width: 52.562vw;
+    height: 23.805vw;
+    position: absolute;
+    right: 5vh;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    justify-content: flex-end;
+}
+
+.image1 {
+    margin-right: 1vw;
+    margin-bottom: 1vw;
+    width: 250px;
+    height: 372px;
+    bottom: 0;
+}
+
+.headwhite{
+    color: white;
+}
