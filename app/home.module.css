@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:wght@500&display=swap');
-/* @import url('https://fonts.cdnfonts.com/css/mortend'); */
 @import url('https://db.onlinewebfonts.com/c/6182518f7bc0b240b3a35699686e85d5?family=Mortend');
 
+/* @font-face {
+    font-family: 'Mortend';
+    src: url('./mortend/otf/mortend-mortend-bold-700.otf') format('embedded-opentype'),
+      url('./mortend/woff/mortend-mortend-bold-700.woff') format('woff'),
+      url('./mortend/ttf/mortend-mortend-bold-700.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+} */
 
 .content {
     display: flex;
@@ -17,12 +24,10 @@
     width: 100%;
     flex-direction: column;
     flex-shrink: 0;
-    font-size: 8vw;
+    font-size: 6vw;
     letter-spacing: 0.5vw;
-    font-family: 'Mortend',sans-serif;
-    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Mortend', sans-serif;
     font-weight: 700;
-    margin-left: 3vw;
     line-height: 100%;
 }
 
@@ -38,50 +43,68 @@
     display: flex;
     width: 50%;
     height: auto;
-    margin-left: 2vw;
     flex-direction: column;
     flex-shrink: 0;
     color: #FFF;
     font-size: 1.647vw;
-    font-family: 'Mortend',sans-serif;
-    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Poppins', sans-serif;
     line-height: 142%;
 }
 
 .image1 {
     position: absolute;
-    bottom: 0;
-    right: 3vw;
+    rotate: 14.51deg;
+    bottom: 2vw;
+    z-index: -10;
+    animation: animationImage1 0.5s 1;
+    animation-timing-function: linear;
+    /* rotate: -14.51deg; */
+    right: 2.5vw;
     width: 15%;
 }
 
 .image2 {
     position: absolute;
     width: 15%;
-    right: 2.5vw;
-    bottom: 0;
+    right: 15vw;
+    bottom: 4vw;
 }
 .image3 {
+    rotate: -14.51deg;
     position: absolute;
     width: 15%;
-    right: 25vw;
-    bottom: 0;
+    right: 27.5vw;
+    animation: animationImage3 0.5s 1;
+    animation-timing-function: linear;
+    /* rotate: 14.51deg; */
+    z-index: -10;
+    bottom: 2vw;
 }
+
 
 @keyframes animationImage1 {
     0% {
-        bottom: -20vw;
+        right: 13vw;
+        rotate: 0deg;
+        bottom: 4vw;
     }
     100% {
-        bottom: 0;
+        right: 2.5vw;
+        rotate: 14.51deg;
+        bottom: 2vw;
     }
 }
 
-@keyframes animationImage2 {
+@keyframes animationImage3 {
     0% {
-       left: -20vw;
+        right: 13vw;
+        rotate: 0deg;
+        bottom: 4vw;
     }
     100% {
-        left: 3vw;
+        right: 27.5vw;
+        rotate: -14.51deg;
+        bottom: 2vw;
     }
 }

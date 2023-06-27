@@ -1,12 +1,12 @@
+@import url('https://db.onlinewebfonts.com/c/6182518f7bc0b240b3a35699686e85d5?family=Mortend');
 .homeHeading {
     display: flex;
     width: 100%;
     flex-direction: column;
     flex-shrink: 0;
-    font-size: 8vw;
+    font-size: 5.5vw;
     letter-spacing: 0.5vw;
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Mortend', sans-serif;
     font-weight: 700;
     line-height: 100%;
 }
@@ -27,8 +27,10 @@
     display: flex;
     z-index: -1;
     flex-direction: row;
-    bottom: 11vw;
+    bottom: 15vw;
     justify-content: flex-end;
+    animation: imgComeIn 1s 1;
+    transition: ease-in-out;
 }
 
 .image1 {
@@ -53,4 +55,15 @@
     font-family: 'Oleo Script Swash Caps', cursive;
     font-family: 'Poppins', sans-serif;
     line-height: 142%;
+    animation: textComeIn 1s 1;
+    transition: ease-in-out;
+}
+
+@keyframes imgComeIn {
+    0% {
+        bottom: -30vw;
+    }
+    100% {
+        bottom: 15vw;
+    }
 }

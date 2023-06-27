@@ -8,15 +8,21 @@ export default function Home() {
       <Navbar state="plans"/>
 
       <div className={doosraStyles.content}>
-          <h1 className={doosraStyles.homeHeading}>
+          <h1 className={styles.homeHeading} style={{fontSize: "5vw"}}>
             <span className={styles.gradient1}>PLANS</span>
           </h1>
-          <p className={mainstyle.homePara}>
-          At WonderPass, we believe that visiting theme parks should be a seamless, extraordinary experience from start to finish. Our dedicated team of theme park enthusiasts is committed to redefining the way you enjoy these magical destinations. With innovation at our core, we strive to bring convenience, personalized service, and unmatched thrills to every ParkPass holder.
-          </p>
       </div>
-      <div className={mainstyle.images}>
-        <img className={mainstyle.image1} src="https://cdn.discordapp.com/attachments/1122590461937328290/1122934986404810832/image.png" />
+      <div className={mainstyle.plans}>
+        <div className={mainstyle.card}>
+          <h1 className={mainstyle.planHeading}>SINGLE</h1>
+          <p className={mainstyle.benefits}>Benefits: </p>
+        </div>
+        <div className={mainstyle.card}>
+          <h1 className={mainstyle.planHeading}>COUPLES</h1>
+        </div>
+        <div className={mainstyle.card}>
+          <h1 className={mainstyle.planHeading}>FAMILY</h1>
+        </div>
       </div>
     </div>
   )
