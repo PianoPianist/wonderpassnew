@@ -1,13 +1,14 @@
 import styles from "../home.module.css"
 import Navbar from "@/components/Navbar"
 import mainstyle from "./plans.module.css"
+import doosraStyles from "../about/about.module.css"
 export default function Home() {
   return (
     <div>
-      <Navbar page="about"/>
+      <Navbar state="plans"/>
 
-      <div className={styles.content}>
-          <h1 className={styles.homeHeading}>
+      <div className={doosraStyles.content}>
+          <h1 className={doosraStyles.homeHeading}>
             <span className={styles.gradient1}>PLANS</span>
           </h1>
           <p className={mainstyle.homePara}>

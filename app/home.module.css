@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:wght@500&display=swap');
+/* @import url('https://fonts.cdnfonts.com/css/mortend'); */
+@import url('https://db.onlinewebfonts.com/c/6182518f7bc0b240b3a35699686e85d5?family=Mortend');
+
+
 .content {
     display: flex;
     flex-direction: column;
     margin-top: 4vw;
     margin-left: 8vw;
     margin-right: 8vw;
+    overflow: hidden;
 }
 
 .homeHeading {
@@ -14,9 +19,10 @@
     flex-shrink: 0;
     font-size: 8vw;
     letter-spacing: 0.5vw;
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Mortend',sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-weight: 700;
+    margin-left: 3vw;
     line-height: 100%;
 }
 
@@ -28,38 +34,54 @@
 }
 
 .homePara {
-    margin-top: 3vh;
+    margin-top: 7.5vh;
     display: flex;
-    width: 39.165vw;
-    height: 6.515vw;
+    width: 50%;
+    height: auto;
+    margin-left: 2vw;
     flex-direction: column;
     flex-shrink: 0;
     color: #FFF;
     font-size: 1.647vw;
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Mortend',sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     line-height: 142%;
 }
 
-.images {
-    width: 52.562vw;
-    height: 23.805vw;
-    position: absolute;
-    right: 5vh;
-    display: flex;
-    flex-direction: row;
-    bottom: 0;
-    justify-content: flex-end;
-}
-
 .image1 {
-    margin-right: 1vw;
-    margin-bottom: 1vw;
-    width: 250px;
-    height: 372px;
+    position: absolute;
+    bottom: 0;
+    right: 3vw;
+    width: 15%;
+}
+
+.image2 {
+    position: absolute;
+    width: 15%;
+    right: 2.5vw;
+    bottom: 0;
+}
+.image3 {
+    position: absolute;
+    width: 15%;
+    right: 25vw;
     bottom: 0;
 }
 
-.headwhite{
-    color: white;
+@keyframes animationImage1 {
+    0% {
+        bottom: -20vw;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes animationImage2 {
+    0% {
+       left: -20vw;
+    }
+    100% {
+        left: 3vw;
+    }
 }

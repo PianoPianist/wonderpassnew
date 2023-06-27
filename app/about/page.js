@@ -4,10 +4,10 @@ import mainstyle from "./about.module.css"
 export default function Home() {
   return (
     <div>
-      <Navbar page="about"/>
+      <Navbar state="about"/>
 
-      <div className={styles.content}>
-          <h1 className={styles.homeHeading}>
+      <div className={mainstyle.content}>
+          <h1 className={mainstyle.homeHeading}>
             <span className={styles.gradient1}>REDEFINING THEME</span>
             <span className={styles.headwhite}>PARK EXPERIENCE</span>
           </h1>

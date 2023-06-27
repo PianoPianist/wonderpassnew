@@ -1,22 +1,43 @@
+.homeHeading {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-shrink: 0;
+    font-size: 8vw;
+    letter-spacing: 0.5vw;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 100%;
+}
 
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
 
 .images {
-    width: 52.562vw;
-    height: 23.805vw;
+    width: 30vw;
+    height: 10vw;
     position: absolute;
     right: 5vh;
     display: flex;
+    z-index: -1;
     flex-direction: row;
-    bottom: 0;
+    bottom: 11vw;
     justify-content: flex-end;
 }
 
 .image1 {
     margin-right: 3.5vw;
     margin-top: 3vw;
-    width: 537px;
-    height: 289px;
-    bottom: 0;
+    margin-bottom: 1vh;
+    width: 39.312vw;
+    height: 16.471vw;
+    bottom: 1vh;
 }
 
 .homePara {
@@ -25,6 +46,7 @@
     width: 55.165vw;
     height: 6.515vw;
     flex-direction: column;
+    justify-content: flex-start;
     flex-shrink: 0;
     color: #FFF;
     font-size: 1.647vw;

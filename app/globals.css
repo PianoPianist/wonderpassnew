@@ -11,6 +11,6 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #fff;
   background: #191825;
 }

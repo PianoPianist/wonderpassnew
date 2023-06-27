@@ -4,16 +4,16 @@ import styles from "./styles/nav.module.css"
 export default function Navbar(props) {
   return (
     <div className={styles.parent}>
-      <div className={styles.logo}>
-        Logo
+      <div>
+        <img className={styles.logo} src="https://media.discordapp.net/attachments/1122590461937328290/1123102423003697172/New_Project.png" />
       </div>
 
       <div className={styles.links}>
-        <h1 className={styles.link} style={props.page==="home"?{color: "#FFA8DC"}:{color: "#FFFFFF"}}><a href = "/" className="cursor-pointer no-underline">Home</a></h1>
-        <h1 className={styles.link} style={props.page==="about"?{color: "#FFA8DC"}:{color: "#FFFFFF"}}><a className="cursor-pointer no-underline" href="/about">About</a></h1>
-        <h1 className={styles.link} style={props.page==="features"?{color: "#FFA8DC"}:{color: "#FFFFFF"}}><a href="features" className="cursor-pointer no-underline">Features</a></h1>
-        <h1 className={styles.link} style={props.page==="plans"?{color: "#FFA8DC"}:{color: "#FFFFFF"}}><a href="plans" className="cursor-pointer no-underline">Plans</a></h1>
-        <h1 className={styles.link} style={props.page==="reviews"?{color: "#FFA8DC"}:{color: "#FFFFFF"}}><a href="reviews" className="cursor-pointer no-underline">Reviews</a></h1>
+        <h1 className={styles.link} style={props.state == "home" ? {color: "#FFA8DC"} : {color: "#FFF"}}><a href="/" className="cursor-pointer no-underline">Home</a></h1>
+        <h1 className={styles.link} style={props.state == "about" ? {color: "#FFA8DC"} : {color: "#FFF"}}><a href="/about" className="cursor-pointer no-underline">About</a></h1>
+        <h1 className={styles.link} style={props.state == "features" ? {color: "#FFA8DC"} : {color: "#FFF"}}><a href="/features" className="cursor-pointer no-underline">Features</a></h1>
+        <h1 className={styles.link} style={props.state == "plans" ? {color: "#FFA8DC"} : {color: "#FFF"}}><a href="/plans" className="cursor-pointer no-underline">Plans</a></h1>
+        <h1 className={styles.link} style={props.state == "reviews" ? {color: "#FFA8DC"} : {color: "#FFF"}}><a className="cursor-pointer no-underline">Reviews</a></h1>
       </div>
     </div>
   )
