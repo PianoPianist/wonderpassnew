@@ -2,12 +2,12 @@
 .container{
     position: relative;
     display: inline-block;
-    width: 600px;
-  margin-right: 10px;
-  animation: fadeInAnimation ease 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
+    width: 40.264vw;
+    margin-right: 10px;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }
 
 .image{
     width:175px;

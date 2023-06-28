@@ -1,73 +1,129 @@
 @import url('https://db.onlinewebfonts.com/c/6182518f7bc0b240b3a35699686e85d5?family=Mortend');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:wght@500&display=swap');
-
-.images {
-    width: 52.562vw;
-    height: 23.805vw;
-    position: absolute;
-    right: 5vh;
-    display: flex;
-    flex-direction: row;
-    bottom: 0;
-    justify-content: flex-end;
-}
-
-.image1 {
-    margin-right: 3.5vw;
-    margin-top: 3vw;
-    width: 537px;
-    height: 289px;
-    bottom: 0;
-}
-
-.homePara {
-    margin-top: 3vh;
-    display: flex;
-    width: 55.165vw;
-    height: 6.515vw;
-    flex-direction: column;
-    flex-shrink: 0;
-    color: #FFF;
-    font-size: 1.647vw;
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-family: 'Poppins', sans-serif;
-    line-height: 142%;
-}
-
-.plans {
-    margin-left: 8vw;
-    margin-right: 8vw;
-    margin-top: 6vw;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-bottom: 5vw;
-}
-
-.card {
-    display: flex;
-    justify-content: center;
-    width: 306px;
-    height: 400px;
-    margin-right: 5vw;
-    border-radius: 30px;
-    background: radial-gradient(131.11% 226.56% at 50.00% 50.00%, rgba(255, 169, 253, 0.30) 0%, rgba(252, 103, 250, 0.00) 100%);
-    backdrop-filter: blur(25px);
-}
-
 .planHeading {
     color: #FFF;
-    font-size: 36px;
+    height: 2.635vw;
+    font-size: 1vw;
     font-family: 'Oleo Script Swash Caps', cursive;
     font-family: 'Poppins', sans-serif;
     margin-top: 2vw;
     font-weight: 700;
 }
 
-.benefits {
+.content {
     display: flex;
-    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
 
+.line {
+    width: 50%;
+    height: 0.25vw;
+    background: white;
+    /* margin: auto; */
+    margin-top: 2vw !important;
+    margin-bottom: 2vw;
+    border-radius: 10vw;
+    display: block;
+}
+
+.dot1{
+    margin-right: 41%;
+    display: block;
+    background: #fff;
+    height: 1.5vw;
+    width: 1.5vw;
+    position: absolute;
+    border-radius: 100%;
+    margin-top: 1.4vw !important;
+}
+
+.para {
+    position: absolute;
+    /* margin-top: 0vw; */
+    margin-top: -1.25vh;
+    margin-right: 41%;
+}
+
+.plans {
+    margin-bottom: 5vw;
+    margin-top: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    margin-right: 5vw;
+    display: flex;
+    border-radius: 30px;
+    background: rgba(134, 93, 255, 0.20);
+    backdrop-filter: blur(50px);
+    justify-content: center;
+    width: 21.962vw;
+    height: 32.283vw;
+    flex-shrink: 0;
+    border-radius: 30px;
+}
+
+.cardHeading {
+    margin-top: 2vw;
+    color: #FFF;
+    font-size: 2.635vw;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.cardButton {
+    position: absolute;
+    bottom: 30px;
+    cursor: pointer;
+    width: 18.009vw;
+    height: 5.564vw;
+    flex-shrink: 0;
+    border-radius: 3.294vw;
+    background: #9548F5;
+}
+
+.btnText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17.057vw;
+    height: 5.783vw;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 2.635vw;
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+#single {
+    margin-left: 5vw;
+    height: 27.283vw;
+    background: radial-gradient(131.11% 226.56% at 50.00% 50.00%, rgba(255, 169, 253, 0.30) 0%, rgba(252, 103, 250, 0.00) 100%);
+    backdrop-filter: blur(25px);
+    transition: background 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out;
+}
+
+#single .cardHeading {
+    filter: blur(0.5px);
+    font-weight: 700;
+    color: #FFA8DC;
+}
+#duo {
+    height: 27.283vw;
+    background: radial-gradient(108.29% 177.88% at 50.00% 50.00%, rgba(207, 146, 255, 0.30) 0%, rgba(255, 170, 221, 0.00) 100%);
+    backdrop-filter: blur(25px);
+    transition: background 0.5s ease-in-out, backdrop-filter 0.5s ease-in-out;
+}
+#family {
+    flex: 2;
 }

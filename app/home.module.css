@@ -15,7 +15,8 @@
     flex-direction: column;
     margin-top: 4vw;
     margin-left: 8vw;
-    margin-right: 8vw;
+    margin-right: 0vw;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -40,46 +41,85 @@
 
 .homePara {
     margin-top: 7.5vh;
-    display: flex;
     width: 50%;
     height: auto;
-    flex-direction: column;
-    flex-shrink: 0;
     color: #FFF;
     font-size: 1.647vw;
     font-family: 'Oleo Script Swash Caps', cursive;
     font-family: 'Poppins', sans-serif;
     line-height: 142%;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.colorText {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.homePara:hover {
+    .colorText {
+        background: -webkit-radial-gradient(farthest-side ,#6F3FFF, #FFC3FE, #BB85FE);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition-duration: 0.5s;
+    }
 }
 
 .image1 {
     position: absolute;
     rotate: 14.51deg;
     bottom: 2vw;
-    z-index: -10;
+    /* z-index: -10; */
     animation: animationImage1 0.5s 1;
     animation-timing-function: linear;
+    transition: 0.5s;
     /* rotate: -14.51deg; */
     right: 2.5vw;
     width: 15%;
+}
+
+.image1:hover {
+    transform: translateY(-30px);
+}
+.image2:hover {
+    transform: translateY(-30px);
+}
+.image3:hover {
+    transform: translateY(-30px);
 }
 
 .image2 {
     position: absolute;
     width: 15%;
     right: 15vw;
+    transition: 0.5s;
     bottom: 4vw;
 }
 .image3 {
     rotate: -14.51deg;
     position: absolute;
     width: 15%;
+    transition: 0.5s;
     right: 27.5vw;
     animation: animationImage3 0.5s 1;
     animation-timing-function: linear;
     /* rotate: 14.51deg; */
-    z-index: -10;
+    /* z-index: -10; */
     bottom: 2vw;
+}
+
+@keyframes hoverAnimation {
+    0% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: -5vw;
+    }
 }
 
 

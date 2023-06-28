@@ -1,15 +1,17 @@
-"use-client"
-
+"use client"
 import styles from "../home.module.css"
 import Navbar from "@/components/Navbar"
 import mainstyle from "./about.module.css"
+import ImageParallax from "./ImageTilt"
+// import * as smth from "./vanilla-tilt"
 export default function Home() {
+
   return (
     <div>
       <Navbar state="about"/>
 
       <div className={mainstyle.content}>
-          <h1 className={styles.homeHeading} id={styles.heading} style={{fontSize: "12vh"}}>
+          <h1 className={styles.homeHeading} id={styles.heading} style={{fontSize: "10vh", width: "100%"}}>
             <span className={styles.gradient1}>REDEFINING THEME</span>
             <span className={styles.headwhite}>PARK EXPERIENCE</span>
           </h1>
@@ -18,7 +20,7 @@ export default function Home() {
           </p>
       </div>
       <div className={mainstyle.images}>
-        <img className={mainstyle.image1} src="https://cdn.discordapp.com/attachments/1122590461937328290/1122934986404810832/image.png" />
+        <ImageParallax className={mainstyle.image1} />
       </div>
     </div>
   )
